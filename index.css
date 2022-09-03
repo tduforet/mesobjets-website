@@ -60,13 +60,12 @@ header {
 .mockups {
     position: relative;
     width: 400px;
-    height: 741px;
+    min-height: 500px;
 }
 
 .iphone-mockup {
     position: absolute;
-    width: 400px;
-    height: 741px;
+    width: 100%;
 }
 
 #mockup-2 {
@@ -115,11 +114,42 @@ header {
         margin-top: 0;
     }
 
+    .description {
+        width: 90%;
+    }
+
+    .mockups {
+        position: relative;
+        width: 357px;
+        height: 661px;
+    }
+    
+    .iphone-mockup {
+        position: absolute;
+        width: 357px;
+        height: 661px;
+    }
+
     .only-desktop {
         display: none;
     }
 
     .only-mobile {
         display: block;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .mockups {
+        position: relative;
+        width: 320px;
+        height: 592px;
+    }
+    
+    .iphone-mockup {
+        position: absolute;
+        width: 320px;
+        height: 592px;
     }
 }
